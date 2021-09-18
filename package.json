@@ -1,0 +1,19 @@
+{
+    "name": "shaderslider",
+    "version": "1.0.0",
+    "description": "original : A Pen created on CodePen.io. Original URL: [https://codepen.io/ashthornton/pen/KRQbMO](https://codepen.io/ashthornton/pen/KRQbMO).",
+    "main": "script.js",
+    "scripts": {
+        "dev": "vite --host"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "vite": "^2.5.7"
+    },
+    "dependencies": {
+        "animejs": "^3.2.1",
+        "three": "^0.132.2"
+    }
+}

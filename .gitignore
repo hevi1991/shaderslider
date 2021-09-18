@@ -1,0 +1,6 @@
+/.DS_Store
+/anime.min.js
+/node_modules
+.vscode/
+/.package-lock.json
+/dist

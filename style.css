@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* slider css below */
+
+#slider {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#slider canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#slider img {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.slider-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+#pagination {
+    position: absolute;
+    /* top: 50%; */
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 20px;
+    z-index: 6;
+}
+#pagination button {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 15px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+    outline: none;
+}
+
+#pagination button:hover {
+    opacity: 0.7;
+}
+#pagination button.active {
+    opacity: 1;
+}
+#pagination button.active:before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+#pagination button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
